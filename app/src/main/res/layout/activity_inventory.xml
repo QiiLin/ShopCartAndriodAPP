@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/inventorybg"
+    tools:context="com.example.andrew.cscb07.InventoryActivity">
+
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="104dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="304dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text="Restock Items:"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/acceptButton"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="588dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/acceptbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/grayBlockImage1"
+        android:layout_width="378dp"
+        android:layout_height="473dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transparentblock" />
+
+    <ScrollView
+        android:layout_width="378dp"
+        android:layout_height="472dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/inventoryScrollConstraint"
+            android:layout_width="381dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/item1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item1"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/item1QuantityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="x##"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toRightOf="@+id/item1Text" />
+
+            <EditText
+                android:id="@+id/PasswordText"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#00ff8a"
+                android:ems="10"
+                android:hint="#"
+                android:inputType="number"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/item1QuantityText" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

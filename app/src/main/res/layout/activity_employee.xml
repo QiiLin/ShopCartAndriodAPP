@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/employeebg"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.andrew.cscb07.EmployeeActivity">
+
+    <TextView
+        android:id="@+id/employeeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeText"
+        app:layout_constraintStart_toStartOf="@+id/welcomeText" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="Welcome"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/personText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:text="person"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        app:layout_constraintStart_toEndOf="@+id/welcomeText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="47dp"
+        android:layout_height="46dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo3" />
+
+    <ImageButton
+        android:id="@+id/restockItemsButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="280dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restock" />
+
+    <ImageButton
+        android:id="@+id/createCustomerButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="28dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/restockItemsButton"
+        app:layout_constraintTop_toTopOf="@+id/restockItemsButton"
+        app:srcCompat="@drawable/createcustomer" />
+
+    <ImageButton
+        android:id="@+id/createEmployeeButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="28dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/createCustomerButton"
+        app:layout_constraintTop_toTopOf="@+id/createCustomerButton"
+        app:srcCompat="@drawable/createemployee" />
+
+    <TextView
+        android:id="@+id/noticeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="156dp"
+        android:text="Notices:"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/messagesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="No new notices at this time"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/noticeText"
+        app:layout_constraintTop_toBottomOf="@+id/noticeText" />
+
+    <TextView
+        android:id="@+id/restockItemsText"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Restock Items"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/restockItemsButton"
+        app:layout_constraintTop_toBottomOf="@+id/restockItemsButton" />
+
+    <TextView
+        android:id="@+id/createCustomerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Create Customer"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/createCustomerButton"
+        app:layout_constraintTop_toBottomOf="@+id/createCustomerButton" />
+
+    <TextView
+        android:id="@+id/createEmployeeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Create Employee"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/createEmployeeButton"
+        app:layout_constraintTop_toBottomOf="@+id/createEmployeeButton" />
+
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="104dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="304dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logout" />
+
+    <ImageButton
+        android:id="@+id/ApproveAllAccount"
+        android:layout_width="94dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/approve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <TextView
+        android:id="@+id/Approveallaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Approve Accounts"
+        android:textColor="#ffffff"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ApproveAllAccount" />
+
+</android.support.constraint.ConstraintLayout>

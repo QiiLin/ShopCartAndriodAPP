@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/customerbg"
+    tools:context="com.example.andrew.cscb07.PhotoActivity">
+
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo3" />
+
+    <ImageView
+        android:id="@+id/photoImage"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="48dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/noimage" />
+
+    <ImageButton
+        android:id="@+id/selectPhotoButton"
+        android:layout_width="157dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoImage"
+        app:srcCompat="@drawable/selectphoto" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="124dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="72dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPhotoButton"
+        app:srcCompat="@drawable/acceptbutton" />
+
+
+</android.support.constraint.ConstraintLayout>
